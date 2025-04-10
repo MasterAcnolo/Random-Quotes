@@ -87,7 +87,7 @@ const quotes = [
 { quotes: "If debugging is the process of removing bugs, then programming must be the process of putting them in.", author: "Edsger W. Dijkstra" },
 { quotes: "I’m not a great programmer, I’m just a great debugger.", author: "Anonymous" },
 { quotes: "When you stop learning, you stop growing.", author: "Anonymous" },
-{quotes: "j'aime les Pommes", author: "Jacques Chirac"}
+{quotes: "J'aime les Pommes", author: "Jacques Chirac"}
 
 ];
 
