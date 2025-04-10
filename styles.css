@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #121212; /* Fond sombre */
+  color: #e0e0e0; /* Texte clair sur fond sombre */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+
+  margin-top: 10%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffffff62; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  position: fixed;
+  bottom: 20%;
+
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  /* font-style: italic; */
+
+}
+
+button:hover {
+  background-color: #7e7e7e62;
+  transform: scale(1.15);
+  transition: all 0.3s;
+  
+}
+
+#quotesbox{
+
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 400%;
+}
+
