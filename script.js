@@ -1,12 +1,18 @@
 function getRandomQuotes(){  // C'est cool de faire une fonction ça permet de rendre la page WEB Dynamique, on actualise avec le bouton en fait 
 
-    const citation = quotes[Math.floor(Math.random() * quotes.length)]
+    
+    const citation = quotes[Math.floor(Math.random() * quotes.length)];
+    
+
+    
     document.getElementById("quotesbox").innerHTML = `
     <p style="font-style: italic;">"${citation.quotes}"</p>
     `
     document.getElementById("authorbox").innerHTML = `
     <p style="text-align: right;">- ${citation.author}</p>
     `;
+
+    
 }
 
 const quotes = [
@@ -91,8 +97,19 @@ const quotes = [
 
 ];
 
+function animationQuotes(){
+    
+    const boxcitation = document.querySelectorAll('.citationbox');
+
+    boxcitation.forEach(citationBox => {
+        citationBox.classList.remove('fadeIn'); // Retirer l'ancienne animation
+        void citationBox.offsetWidth; // Forcer le reflow pour réinitialiser l'animation
+        citationBox.classList.add('fadeIn'); // Ajouter à nouveau la classe d'animation
+    });
+}
 window.onload = function(){
 
     getRandomQuotes();
+    animationQuotes();
 
 }

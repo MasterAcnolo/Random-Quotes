@@ -44,6 +44,10 @@ button:hover {
   
 }
 
+.citationbox{ /* Class de quotes et d'author*/
+
+  animation: fadeIn 2s ease-in-out;
+}
 #quotesbox{
 
   font-family: "Stardos Stencil", system-ui;
@@ -60,4 +64,15 @@ button:hover {
   padding-left: 70%;
   font-size: 200%;
   
+}
+
+@keyframes fadeIn{
+
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
