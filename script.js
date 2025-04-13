@@ -98,7 +98,7 @@ const quotes = [
 ];
 
 function animationQuotes(){
-    
+
     const boxcitation = document.querySelectorAll('.citationbox');
 
     boxcitation.forEach(citationBox => {
@@ -110,6 +110,6 @@ function animationQuotes(){
 window.onload = function(){
 
     getRandomQuotes();
-    animationQuotes();
+    // animationQuotes();
 
 }
