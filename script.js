@@ -12,7 +12,7 @@ function getRandomQuotes(){  // C'est cool de faire une fonction ça permet de r
     <p style="text-align: right;">- ${citation.author}</p>
     `;
 
-    
+    animationQuotes();
 }
 
 const quotes = [
@@ -97,16 +97,18 @@ const quotes = [
 
 ];
 
-function animationQuotes(){
+// function animationQuotes(){
+//     const boxcitation = document.querySelectorAll('.citationbox');
 
-    const boxcitation = document.querySelectorAll('.citationbox');
+//     // On retire la classe fadeIn avant de la rajouter pour redémarrer l'animation
+//     boxcitation.forEach(citationBox => {
+//         citationBox.classList.remove('fadeIn'); // Supprime l'ancienne animation
+//         // Forcer un reflow pour redémarrer l'animation
+//         void citationBox.offsetWidth; 
+//         citationBox.classList.add('fadeIn'); // Ajoute la classe pour redémarrer l'animation
+//     });
+// }
 
-    boxcitation.forEach(citationBox => {
-        citationBox.classList.remove('fadeIn'); // Retirer l'ancienne animation
-        void citationBox.offsetWidth; // Forcer le reflow pour réinitialiser l'animation
-        citationBox.classList.add('fadeIn'); // Ajouter à nouveau la classe d'animation
-    });
-}
 window.onload = function(){
 
     getRandomQuotes();
