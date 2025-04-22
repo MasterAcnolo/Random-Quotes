@@ -12,7 +12,8 @@ function getRandomQuotes(){  // C'est cool de faire une fonction ça permet de r
     <p style="text-align: right;">- ${citation.author}</p>
     `;
 
-    
+  
+  
 }
 
 const quotes = [
